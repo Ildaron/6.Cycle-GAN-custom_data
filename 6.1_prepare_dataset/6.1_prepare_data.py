@@ -31,6 +31,6 @@ dataB2 = load_images(path + 'testB/')
 dataB = vstack((dataB1, dataB2))
 print('Loaded dataB: ', dataB.shape)
 # save as compressed numpy array
-filename = 'D:/worktable/science/13.Eyes_tracking/4.GAN_for_eye_tracking/dataset/eye_dataset.npz'
+filename = 'D:/eye_dataset.npz'
 savez_compressed(filename, dataA, dataB)
 print('Saved dataset: ', filename)
